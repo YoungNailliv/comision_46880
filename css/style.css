@@ -1,0 +1,247 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@500;600;700;800&family=Inter:wght@900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+html {width: 100%; height: 100%;}
+
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background-image: url(../asset/img/fondo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: grid;
+    grid-template-rows: 12% auto 8%
+}
+
+/* FIX ELEMENTS */
+
+.menu_hamburguesa {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+
+
+}
+
+.logo_header  {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: .625rem;
+}
+
+.logo_header img {
+    height: 120px;
+    width: 120px;
+}
+
+
+.navbar {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 100%;
+    flex-wrap: wrap;
+
+}
+
+nav {
+    width: auto;
+    background-color: #D9534F;
+    box-shadow: -5px 5px 0px #7e302e;
+    height: 80%;
+    display: flex;
+    justify-content: center;
+    border-radius: 6.25rem;
+    /* flex-wrap: wrap; */
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    font-size: 1.5rem;
+    
+}
+
+.carrito_compra {
+    margin-top: .625rem;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito_compra a  {
+    margin: 0;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9534F;
+    box-shadow: -5px 5px 0px #7e302e;
+    border-radius: 100px;
+    
+    
+}
+
+.carrito_compra a img {
+    height: 50%;
+
+}
+
+footer {
+    width: 100%; 
+    height: 100%;
+    background-color: #D9534F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* INDEX */
+
+.section_index {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    gap: 0%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.section_index h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 40px;
+    opacity: 90%;
+    text-shadow: -2px 2px 10px black;
+}
+
+.section_index p {
+    text-align: center;
+    color: rgb(233, 232, 232);
+    font-family: 'Dosis', sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    opacity: 90%;
+    text-shadow: -2px 2px 10px black;
+}
+.section_index button {
+    margin-top: 1.25rem;
+    width: 12.5rem;
+    padding-top: .625rem;
+    padding-bottom: .625rem;
+    background-color: #96CEB4;
+    color: white;
+    border-color: #6f9986;
+    border-radius: 1.25rem;
+    font-family: 'Dosis', sans-serif;
+    box-shadow  : -2px 2px 0px #394e45;
+    text-shadow   : -2px 2px 0px #394e45;
+    align-self: center;
+
+
+}
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        grid-template-columns: 18% 64% 18%;
+    }
+
+
+    .section_index h1 {
+        font-size: 2rem;
+    }
+
+    .section_index p {
+        font-size: 1.5rem;
+    }
+
+    .navbar {
+        flex-direction: row;
+        width: 12.5rem;
+    }
+    
+    .navbar li a {
+        font-size: 14   px;
+    }
+
+    .logo_header img {
+        height: 70px;
+        width: 70px;
+    }
+
+    .carrito_compra a {
+        height: 70px;
+        width: 70px;
+}
+}
+
+
+
+
+
+
+@media only screen and (max-width: 425px) {
+    header {
+        grid-template-columns: 22% 56% 22%;
+    }
+
+    .navbar li a {
+        font-size: .75rem;
+    }
+    
+    .logo_header img {
+        height: 50px;
+        width: 50px;
+    }
+
+    .carrito_compra a {
+        height: 50px;
+        width: 50px;
+}
+    .section_index h1 {
+        font-size: 24px;
+    }
+    .section_index p {
+        font-size: 1rem;
+    }
+
+    .section_index buttom {
+        width: 6.25rem;
+    }
+}
